@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    width: 320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #0000;
+    color:black;
+    /*font-family: 'Righteous', cursive;*/
+    font-family: 'Roboto', sans-serif;
+}
+#mainContainer{
+    width: 320px;
+    margin: 0 auto;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+#topPart{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-image: url(../Assets/background11.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.logo{
+    animation-duration: 3s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 150%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 120px;
+    }
+  }
+  .partOne{
+      width: 100%;
+      box-sizing: border-box;
+      padding: 15px;
+      display: flex;
+      flex-direction: row;
+      margin-top: 15px;
+  }
+  .partOne h1{
+    font-family: 'Righteous', cursive;
+    text-shadow: 1px 1px 1px rgb(182, 182, 182), 
+               3px 3px 5px rgb(247, 200, 247); 
+  }
+  .partTwo{
+      width: 100%;
+      box-sizing: border-box;
+    padding: 15px;
+  }
+  .partTwo h1{
+    font-family: 'Righteous', cursive;
+  }
