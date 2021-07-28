@@ -11,7 +11,7 @@ body {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 14px;
     background-color: #0000;
     color:black;
     /*font-family: 'Righteous', cursive;*/
@@ -25,19 +25,25 @@ body {
     display: flex;
     flex-direction: column;
 }
-#topPart{
+#topPart, #aboutMe{
     width: 100%;
-    height: 100vh;
+    height: 65vh;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    background-image: url(../Assets/background11.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
-.logo{
+#topPart{
+  background-image: url(../Assets/background11.png);
+}
+#aboutMe{
+  margin-top: 20px;
+  background-image: url(../Assets/background2.png);
+}
+/*.logo{
     animation-duration: 3s;
   animation-name: slidein;
 }
@@ -51,7 +57,7 @@ body {
       margin-left: 0%;
       width: 120px;
     }
-  }
+  }*/
   .partOne{
       width: 100%;
       box-sizing: border-box;
@@ -63,13 +69,23 @@ body {
   .partOne h1{
     font-family: 'Righteous', cursive;
     text-shadow: 1px 1px 1px rgb(182, 182, 182), 
-               3px 3px 5px rgb(247, 200, 247); 
+               3px 3px 5px rgb(253, 233, 253); 
   }
   .partTwo{
       width: 100%;
       box-sizing: border-box;
-    padding: 15px;
+    padding: 7px;
   }
   .partTwo h1{
     font-family: 'Righteous', cursive;
+  }
+  .meMe{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Yegor{
+    border-radius: 50%;
+    box-shadow: 5px 5px #b692bd;
   }
