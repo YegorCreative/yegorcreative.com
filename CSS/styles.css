@@ -25,9 +25,9 @@ body {
     display: flex;
     flex-direction: column;
 }
-#topPart, #aboutMe{
+#topPart, #aboutMe, #youtube{
     width: 100%;
-    height: 65vh;
+    
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -38,10 +38,19 @@ body {
 }
 #topPart{
   background-image: url(../Assets/background11.png);
+  height: 65vh;
 }
 #aboutMe{
   margin-top: 20px;
   background-image: url(../Assets/background2.png);
+}
+#youtube{
+  margin-top: 20px;
+  background-image: url(../Assets/Asset12small.png);
+  background-repeat: repeat;
+  margin-bottom: 20px;
+  background-size: auto;
+  padding: 20px;
 }
 /*.logo{
     animation-duration: 3s;
@@ -84,8 +93,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 15px;
+    text-align: center;
   }
   .Yegor{
     border-radius: 50%;
     box-shadow: 5px 5px #b692bd;
+  }
+  .meMe h1{
+    font-family: 'Righteous', cursive;
+  }
+  #youtube iframe {
+    border-radius: 20px;
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.54);
   }
