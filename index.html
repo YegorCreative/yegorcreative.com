@@ -3,22 +3,161 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>YegorCreative</title>
+  <meta name="description" content="YegorCreative – photography, branding & creative direction by Yegor Hambaryan.">
+  <title>YegorCreative – Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-    <h1>YegorCreative</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="about.html">About</a> |
-      <a href="photography.html">Photography</a> |
-      <a href="contact.html">Contact</a>
+
+  <!-- Ambient cursor glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ── Navigation ─────────────────────────────────────── -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav-inner container">
+      <a class="brand" href="index.html">
+        <img src="Assets/lionheadico.png" alt="YegorCreative logo" width="30" height="30">
+        <span>YegorCreative</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="photography.html">Photography</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
   </header>
 
   <main>
-    <h2>Home</h2>
-    <p>This site has been reset to a basic HTML structure.</p>
+
+    <!-- ── Hero ───────────────────────────────────────────── -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="container hero-inner">
+        <p class="hero-eyebrow">Photography &amp; Creative Direction</p>
+        <h1 class="hero-title">
+          Crafting <em>visual stories</em><br>that leave a mark.
+        </h1>
+        <p class="hero-sub">
+          Hi, I'm Yegor — a photographer and creative director passionate about capturing
+          moments, building brands, and pushing image quality to its limits.
+        </p>
+        <div class="hero-cta">
+          <a href="photography.html" class="btn btn-primary">View My Work</a>
+          <a href="contact.html"     class="btn btn-ghost">Let's Collaborate</a>
+        </div>
+      </div>
+      <div class="scroll-hint">
+        <span></span>
+        <p>Scroll</p>
+      </div>
+    </section>
+
+    <!-- ── About Preview ──────────────────────────────────── -->
+    <section class="about-strip reveal">
+      <div class="container about-strip-inner">
+        <div class="about-strip-img">
+          <img src="Assets/YegorHambaryan.png" alt="Yegor Hambaryan">
+        </div>
+        <div class="about-strip-text">
+          <span class="label">About Me</span>
+          <h2>A creative eye<br>behind every frame.</h2>
+          <p>
+            From behind-the-lens photography to full creative campaigns, I bring a meticulous
+            approach to every project. I specialize in portrait, landscape, and brand
+            photography — complemented by graphic design and motion.
+          </p>
+          <a href="about.html" class="btn btn-ghost">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Selected Work ──────────────────────────────────── -->
+    <section class="selected-work reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="label">Selected Work</span>
+          <h2>Photography</h2>
+        </div>
+        <div class="work-grid">
+          <a href="photography.html" class="work-card" style="--img:url('Assets/Asset 1.png')"></a>
+          <a href="photography.html" class="work-card" style="--img:url('Assets/Asset 3.png')"></a>
+          <a href="photography.html" class="work-card" style="--img:url('Assets/Asset 6.png')"></a>
+          <a href="photography.html" class="work-card" style="--img:url('Assets/Asset 9.png')"></a>
+          <a href="photography.html" class="work-card" style="--img:url('Assets/Asset 21.png')"></a>
+          <a href="photography.html" class="work-card" style="--img:url('Assets/Asset 22.png')"></a>
+        </div>
+        <div class="section-footer">
+          <a href="photography.html" class="btn btn-primary">View All Photos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Stats ──────────────────────────────────────────── -->
+    <section class="stats-section reveal">
+      <div class="container stats-grid">
+        <div class="stat-card">
+          <span class="stat-num">200+</span>
+          <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">5+</span>
+          <span class="stat-label">Years of Experience</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">30+</span>
+          <span class="stat-label">Happy Clients</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">∞</span>
+          <span class="stat-label">Passion for the Craft</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA Band ───────────────────────────────────────── -->
+    <section class="cta-band reveal">
+      <div class="container">
+        <h2>Ready to create something amazing?</h2>
+        <p>
+          Whether it's a portrait session, branding shoot, or a bold creative concept —
+          I'd love to hear about your project.
+        </p>
+        <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+      </div>
+    </section>
+
   </main>
+
+  <!-- ── Footer ─────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="index.html">
+        <img src="Assets/lionheadico.png" alt="YegorCreative logo" width="28" height="28">
+        <span>YegorCreative</span>
+      </a>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="photography.html">Photography</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram"><img src="Assets/instagram.png" alt="Instagram" width="22"></a>
+        <a href="#" aria-label="YouTube"><img src="Assets/youtube.png" alt="YouTube" width="22"></a>
+        <a href="#" aria-label="LinkedIn"><img src="Assets/linkedIn.png" alt="LinkedIn" width="22"></a>
+        <a href="#" aria-label="GitHub"><img src="Assets/github.png" alt="GitHub" width="22"></a>
+      </div>
+      <p class="footer-copy">&copy; 2026 YegorCreative. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -3,22 +3,150 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>About | YegorCreative</title>
+  <meta name="description" content="About Yegor Hambaryan – YegorCreative photographer and creative director.">
+  <title>About | YegorCreative</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<header>
-		<h1>YegorCreative</h1>
-		<nav>
-			<a href="index.html">Home</a> |
-			<a href="about.html">About</a> |
-			<a href="photography.html">Photography</a> |
-			<a href="contact.html">Contact</a>
-		</nav>
-	</header>
 
-	<main>
-		<h2>About</h2>
-		<p>This is a basic about page after reset.</p>
-	</main>
-</body>
-</html>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ── Navigation ─────────────────────────────────────── -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav-inner container">
+      <a class="brand" href="index.html">
+        <img src="Assets/lionheadico.png" alt="YegorCreative logo" width="30" height="30">
+        <span>YegorCreative</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="photography.html">Photography</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ── Page Hero ──────────────────────────────────────── -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="label">About Me</span>
+        <h1>Hi, I'm <span>Yegor</span>.</h1>
+        <p>
+          Photographer, creative director &amp; visual storyteller — passionate about
+          light, color, and the stories a single frame can tell.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── Bio ────────────────────────────────────────────── -->
+    <section class="about-bio reveal">
+      <div class="container about-bio-inner">
+        <div class="about-bio-photo">
+          <img src="Assets/YegorHambaryan.png" alt="Yegor Hambaryan">
+        </div>
+        <div class="about-bio-content">
+          <span class="label">My Story</span>
+          <h2>Turning moments into lasting impressions.</h2>
+          <p>
+            I'm Yegor Hambaryan — a photographer and creative professional with a passion
+            for capturing the extraordinary within the ordinary. My journey into photography
+            started with a deep fascination for light: how it shapes form, evokes emotion,
+            and transforms a simple scene into a story worth telling.
+          </p>
+          <p>
+            Over the years I've developed a style that balances technical precision with
+            artistic intuition. Whether shooting portraits, architecture, or brand campaigns,
+            I approach every project with the same mindset: get it right in camera and
+            elevate it in post.
+          </p>
+          <p>
+            Beyond photography, I'm deeply invested in creative direction — shaping the
+            visual identity of brands and helping them communicate who they truly are.
+            I believe great design always starts with a great image.
+          </p>
+          <p>
+            When I'm not behind a camera or a screen, you'll find me exploring new cities,
+            studying light, and obsessing over image quality.
+          </p>
+          <a href="contact.html" class="btn btn-primary">Work With Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Skills ─────────────────────────────────────────── -->
+    <section class="skills-section reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="label">What I Do</span>
+          <h2>Services &amp; Skills</h2>
+        </div>
+        <div class="skills-grid reveal-stagger">
+          <div class="skill-card">
+            <div class="skill-icon">📸</div>
+            <h3>Photography</h3>
+            <p>Portrait, landscape, event, product, and brand photography with a meticulous eye for light and composition.</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🎨</div>
+            <h3>Creative Direction</h3>
+            <p>Concept development, mood boarding, and visual direction for campaigns, brands, and editorial projects.</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">✏️</div>
+            <h3>Graphic Design</h3>
+            <p>Logo design, brand identity, typography, and visual assets crafted with purpose and aesthetic precision.</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🖥️</div>
+            <h3>Web Design</h3>
+            <p>Clean, modern, and performant websites that represent brands beautifully across all devices.</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🎥</div>
+            <h3>Video &amp; Motion</h3>
+            <p>Short-form video production, reels, and motion graphics for social media and web campaigns.</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🔬</div>
+            <h3>Image Quality</h3>
+            <p>Deep expertise in image quality assessment, color science, and post-production workflows for optimal results.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="index.html">
+        <img src="Assets/lionheadico.png" alt="YegorCreative logo" width="28" height="28">
+        <span>YegorCreative</span>
+      </a>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="photography.html">Photography</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram"><img src="Assets/instagram.png" alt="Instagram" width="22"></a>
+        <a href="#" aria-label="YouTube"><img src="Assets/youtube.png" alt="YouTube" width="22"></a>
+        <a href="#" aria-label="LinkedIn"><img src="Assets/linkedIn.png" alt="LinkedIn" width="22"></a>
+        <a href="#" aria-label="GitHub"><img src="Assets/github.png" alt="GitHub" width="22"></a>
+      </div>
+      <p class="footer-copy">&copy; 2026 YegorCreative. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>

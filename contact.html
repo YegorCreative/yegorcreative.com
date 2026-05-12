@@ -3,22 +3,132 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Contact | YegorCreative</title>
+  <meta name="description" content="Get in touch with Yegor Hambaryan – YegorCreative.">
+  <title>Contact | YegorCreative</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<header>
-		<h1>YegorCreative</h1>
-		<nav>
-			<a href="index.html">Home</a> |
-			<a href="about.html">About</a> |
-			<a href="photography.html">Photography</a> |
-			<a href="contact.html">Contact</a>
-		</nav>
-	</header>
 
-	<main>
-		<h2>Contact</h2>
-		<p>This is a basic contact page after reset.</p>
-	</main>
-</body>
-</html>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ── Navigation ─────────────────────────────────────── -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav-inner container">
+      <a class="brand" href="index.html">
+        <img src="Assets/lionheadico.png" alt="YegorCreative logo" width="30" height="30">
+        <span>YegorCreative</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="photography.html">Photography</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ── Contact ────────────────────────────────────────── -->
+    <section class="contact-section">
+      <div class="container contact-inner">
+
+        <!-- Left: info -->
+        <div class="contact-info reveal">
+          <span class="label">Get In Touch</span>
+          <h1>Let's create<br>something <span>great.</span></h1>
+          <p>
+            Have a project in mind? Want to collaborate, book a session, or just say hi?
+            Fill out the form and I'll get back to you as soon as possible.
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:hello@yegorcreative.com" class="contact-link">
+              <img src="Assets/email.png" alt="Email" width="22">
+              <span>hello@yegorcreative.com</span>
+            </a>
+            <a href="https://www.instagram.com" class="contact-link" target="_blank" rel="noopener">
+              <img src="Assets/instagram.png" alt="Instagram" width="22">
+              <span>@yegorcreative</span>
+            </a>
+            <a href="https://www.youtube.com" class="contact-link" target="_blank" rel="noopener">
+              <img src="Assets/youtube.png" alt="YouTube" width="22">
+              <span>YegorCreative on YouTube</span>
+            </a>
+            <a href="https://www.linkedin.com" class="contact-link" target="_blank" rel="noopener">
+              <img src="Assets/linkedIn.png" alt="LinkedIn" width="22">
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/YegorCreative" class="contact-link" target="_blank" rel="noopener">
+              <img src="Assets/github.png" alt="GitHub" width="22">
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: form -->
+        <form class="contact-form reveal" action="#" method="post" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Yegor" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Hambaryan" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Portrait session, brand shoot, etc.">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project…" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="index.html">
+        <img src="Assets/lionheadico.png" alt="YegorCreative logo" width="28" height="28">
+        <span>YegorCreative</span>
+      </a>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="photography.html">Photography</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram"><img src="Assets/instagram.png" alt="Instagram" width="22"></a>
+        <a href="#" aria-label="YouTube"><img src="Assets/youtube.png" alt="YouTube" width="22"></a>
+        <a href="#" aria-label="LinkedIn"><img src="Assets/linkedIn.png" alt="LinkedIn" width="22"></a>
+        <a href="#" aria-label="GitHub"><img src="Assets/github.png" alt="GitHub" width="22"></a>
+      </div>
+      <p class="footer-copy">&copy; 2026 YegorCreative. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
